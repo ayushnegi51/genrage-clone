@@ -41,7 +41,7 @@
             letter-spacing: 2px;
         }
         .container {
-            max-width: 1200px;
+            max-width: 600px;
             margin: 0 auto;
             padding: 15px;
         }
@@ -53,73 +53,71 @@
             color: #aaa;
         }
         .shop-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 12px;
-        }
-        @media(min-width: 768px) {
-            .shop-grid {
-                grid-template-columns: repeat(4, 1fr);
-            }
+            display: flex;
+            justify-content: center;
         }
         .product-card {
             background: #1a1a1a;
             border: 1px solid #2a2a2a;
             position: relative;
-            padding-bottom: 12px;
+            padding-bottom: 15px;
+            width: 100%;
+            max-width: 320px;
+            border-radius: 4px;
+            overflow: hidden;
         }
         .sale-badge {
             position: absolute;
-            top: 8px;
-            left: 8px;
+            top: 10px;
+            left: 10px;
             background: #e53935;
             color: #fff;
-            font-size: 9px;
-            padding: 3px 5px;
+            font-size: 10px;
+            padding: 4px 6px;
             font-weight: bold;
             z-index: 2;
         }
         .product-image {
             width: 100%;
-            height: 240px;
+            height: 380px;
             object-fit: cover;
             background: #222;
+            display: block;
         }
         .product-info {
-            padding: 10px;
+            padding: 15px;
             text-align: center;
         }
         .product-title {
-            font-size: 11px;
+            font-size: 13px;
             font-weight: 600;
-            margin-bottom: 6px;
+            margin-bottom: 8px;
             letter-spacing: 0.5px;
-            height: 28px;
-            overflow: hidden;
         }
         .product-price {
-            font-size: 12px;
+            font-size: 14px;
             font-weight: bold;
             color: #ff5252;
+            margin-bottom: 12px;
         }
         .old-price {
             text-decoration: line-through;
             color: #777;
-            font-size: 10px;
-            margin-left: 4px;
+            font-size: 11px;
+            margin-left: 6px;
         }
         .buy-btn {
             display: block;
-            width: 90%;
-            margin: 8px auto 0 auto;
+            width: 100%;
             background: #ffffff;
             color: #000000;
             border: none;
-            padding: 7px;
+            padding: 10px;
             font-weight: bold;
-            font-size: 10px;
+            font-size: 11px;
             cursor: pointer;
             text-transform: uppercase;
+            letter-spacing: 1px;
         }
         .buy-btn:hover {
             background: #e0e0e0;
@@ -177,10 +175,10 @@
         <div class="section-title">All Products</div>
         <div class="shop-grid">
 
-            <!-- Target Product -->
+            <!-- Single Target Product -->
             <div class="product-card">
                 <span class="sale-badge">SAVE 50%</span>
-                <img src="1000093422.png" class="product-image" alt="Genrage Black Balloon Pants">
+                <img src="https://images.unsplash.com/photo-1517445312882-bc9910d016b7?w=600" class="product-image" alt="Genrage Black Balloon Pants">
                 <div class="product-info">
                     <div class="product-title">GENRAGE BLACK BALLOON PANTS</div>
                     <div class="product-price">Rs. 1,500 <span class="old-price">Rs. 2,999</span></div>
